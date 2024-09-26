@@ -20,3 +20,6 @@
   ```powershell
   pip install -r requirements.txt
   ```
+
+## Why Dictionary Data Type?
+The dictionary data type is the most suitable data type for the goal of the recipe app. It follows a key:value pair which allows for immutable data types to be within the same data structure. The stucture for a recipe requires: strings, integers and lists which is all possible when using the dictionary. The nature of the structure is sequential, so multiple recipes can be stored, and modified as required.
