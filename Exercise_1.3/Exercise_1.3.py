@@ -31,3 +31,18 @@ for i in range(n):
     recipes_list.append(recipe)
 
 
+# Iterates through recipes_list to determine difficulty
+for recipe in recipes_list:
+    if recipe["cooking_time"] < 10 and len(recipe["ingredients"]) < 4:
+        recipe["difficulty"] = "Easy"
+
+    elif recipe["cooking_time"] < 10 and len(recipe["ingredients"]) >= 4:
+        recipe["difficulty"] = "Medium"
+
+    elif recipe["cooking_time"] >= 10 and len(recipe["ingredients"]) < 4:
+        recipe["difficulty"] = "Intermediate"
+    
+    elif recipe["cooking_time"] >= 10 and len(recipe["ingredients"]) >= 4:
+        recipe["difficulty"] = "Hard"
+
+
