@@ -46,3 +46,10 @@ for recipe in recipes_list:
         recipe["difficulty"] = "Hard"
 
 
+# Iterates through recipes_list to display elements
+for recipe in recipes_list:
+    print("Recipe: ", recipe["name"])
+    print("Cooking time: ", recipe["cooking_time"])
+    print("Ingredients: ", recipe["ingredients"])
+    print("Difficulty: ", recipe["difficulty"])
+
