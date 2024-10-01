@@ -15,3 +15,19 @@ def take_recipe():
 
     return recipe
 
+# User prompt: Number of recipes
+n = int(input("How many recipes would you like to enter?: "))
+
+# Iterates through number of recipes
+for i in range(n):
+    recipe = take_recipe()
+
+    # Checks if an ingredient already exists in ingredients_list
+    for ingredient in recipe["ingredients"]:
+        if not ingredient in [ingredients_list]:
+            ingredients_list.append(ingredient)
+
+
+    recipes_list.append(recipe)
+
+
