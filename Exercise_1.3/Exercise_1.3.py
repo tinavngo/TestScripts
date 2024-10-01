@@ -53,3 +53,12 @@ for recipe in recipes_list:
     print("Ingredients: ", recipe["ingredients"])
     print("Difficulty: ", recipe["difficulty"])
 
+# Sort and display all ingredients
+def all_ingredients():
+    print("Ingredients Available Across All Recipes")
+    print("____________________________________________")
+    ingredients_list.sort()
+    for ingredient in ingredients_list:
+        print(ingredient)
+
+all_ingredients()
