@@ -66,6 +66,8 @@ def calculate_difficulty(cooking_time, ingredients):
         return "Intermediate"
     elif cooking_time >= 10 and len(ingredients) >= 4 :
         return "Hard"
+    else:
+        print("Something went wrong, please try again.")
 
 def search_recipe(conn, cursor):
     cursor.execute("SELECT ingredients FROM Recipes")
